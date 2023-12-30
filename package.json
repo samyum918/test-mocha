@@ -1,0 +1,21 @@
+{
+  "name": "test-mocha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test:uat": "env-cmd -e uat mocha --config .mocharc.cjs",
+    "test:prod": "env-cmd -e prod mocha --config .mocharc.cjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^1.6.3",
+    "chai": "^5.0.0",
+    "env-cmd": "^10.1.0",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}
